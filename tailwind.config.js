@@ -5,7 +5,11 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'hover-hover': {'raw': '(hover: hover)'} // https://stackoverflow.com/a/60478751
+      }
+    },
   },
   variants: {
     extend: {},

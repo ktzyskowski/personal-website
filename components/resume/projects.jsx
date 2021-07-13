@@ -1,35 +1,4 @@
-const projects = [
-  {
-    name: 'ktzyskowski.github.io',
-    description: 'My personal website, created using Next.js and styled with Tailwind CSS.',
-    githubUrl: 'https://github.com/ktzyskowski/ktzyskowski.github.io'
-  },
-  {
-    name: 'ktzyskowski.github.io',
-    description: 'My personal website, created using Next.js and Tailwind CSS.',
-    githubUrl: 'https://github.com/ktzyskowski/ktzyskowski.github.io'
-  },
-  {
-    name: 'ktzyskowski.github.io',
-    description: 'My personal website, created using Next.js and Tailwind CSS.',
-    githubUrl: 'https://github.com/ktzyskowski/ktzyskowski.github.io'
-  },
-  {
-    name: 'ktzyskowski.github.io',
-    description: 'My personal website, created using Next.js and Tailwind CSS.',
-    githubUrl: 'https://github.com/ktzyskowski/ktzyskowski.github.io'
-  },
-  {
-    name: 'ktzyskowski.github.io',
-    description: 'My personal website, created using Next.js and Tailwind CSS.',
-    githubUrl: 'https://github.com/ktzyskowski/ktzyskowski.github.io'
-  },
-  {
-    name: 'ktzyskowski.github.io',
-    description: 'My personal website, created using Next.js and Tailwind CSS.',
-    githubUrl: 'https://github.com/ktzyskowski/ktzyskowski.github.io'
-  },
-]
+import projects from '../../data/projects'
 
 function Projects() {
   return (
@@ -46,7 +15,7 @@ function Projects() {
 
 function Card({ project }) {
   return (
-    <a href="https://www.google.com">
+    <a href={project.githubUrl}>
       <div className="rounded shadow-sm px-6 py-4 border border-gray-200 hover:bg-gray-50">
         <h3 className="font-bold text-xl mb-2">{project.name}</h3>
         <p className="text-gray-700 text-base">{project.description}</p>
