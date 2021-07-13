@@ -13,7 +13,7 @@ function Navigation() {
       <nav className="flex flex-row justify-center space-x-6">
         {pages.map(page => (
           <Link key={page.id} href={page.href}>
-            <a className="p-2 hover:text-blue-500 font-medium">{page.name}</a>
+            <a className="p-2 hover-hover:hover:text-blue-500 font-medium">{page.name}</a>
           </Link>
         ))}
       </nav>

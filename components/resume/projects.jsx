@@ -16,7 +16,7 @@ function Projects() {
 function Card({ project }) {
   return (
     <a href={project.githubUrl}>
-      <div className="rounded shadow-sm px-6 py-4 border border-gray-200 hovver:bg-gray-50">
+      <div className="rounded shadow-sm px-6 py-4 border border-gray-200 hover:bg-gray-50">
         <h3 className="font-bold text-xl mb-2">{project.name}</h3>
         <p className="text-gray-700 text-base">{project.description}</p>
       </div>
